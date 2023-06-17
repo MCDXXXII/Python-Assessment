@@ -6,7 +6,9 @@ whitespace = ' '
 
 while not initialize:
     username = input('enter a name for your home folder below \n').lower()
-    if whitespace in username:
+    if username == '' or username == ' ':
+        print('Run Error: No username provided. Please input a username')
+    elif whitespace in username:
         valid_username = ''
         print(f'Run Error: "{username}" is invalid. Username must be one position. Use "_" to concatenate')
         user_list = username.split(' ')
@@ -98,9 +100,11 @@ def touch():
 #BELOW CODE WILL KEEP PROGRAM IN LOOP TO MANIPULATE DIRECTORIES UNTIL EXIT 
 while program_run:
     
-    argument = input(f'\n{current_folder} > ').lower()
+    argument = input(f'{current_folder} > ').lower()
     argument_split = argument.split()
-    if argument_split[0] == 'ls':
+    if argument == '' or argument == ' ':
+        print('Run Error: Please provide a valid command')
+    elif argument_split[0] == 'ls':
         if len(argument_split) == 1:
             ls()
         else:
