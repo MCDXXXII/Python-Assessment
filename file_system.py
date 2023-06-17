@@ -5,7 +5,7 @@ initialize = False
 whitespace = ' '
 
 while not initialize:
-    username = input('enter a name for your home folder below \n').title()
+    username = input('enter a name for your home folder below \n').lower()
     if whitespace in username:
         valid_username = ''
         print(f'Run Error: "{username}" is invalid. Username must be one position. Use "_" to concatenate')
