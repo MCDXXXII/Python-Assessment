@@ -17,6 +17,7 @@ IF cd IS ENTERED WITHOUT A FOLDER NAME THE PROGRAM IS DESIGNED TO TAKE YOU BACK 
 **** mkdir - mkdir will create a folder for you. As with cd you will need to also need to provide the name of the folder after mkdir (i.e. 'mkdir files' to create a folder named files). If the folder exists the program will notify you and you will need to provide a different name. Any folders that are more than one position in name must be without spaces to properly execute otherwise the program will inform you at which point you will need to input the name in a manner similiar. (i.e 'mkdir new folder' will result in programmed error whereas 'mkdir new_folder' will not.
 
 **** touch - touch will create a new .txt file in whichever folder you currently are in. If the file already exists, unlike mkdir, the file will simply be overwritten without error
+
 **** exit - exit will quit the program and all memory of the file system will be lost
 
 There are created folders and files as a reference in each folder but you can manipulate the file system however you choose within the aforementioned parameters
